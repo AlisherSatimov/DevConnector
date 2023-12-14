@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             },
         });
         experienceBody.innerHTML = "";
+        educationBody.innerHTML = "";
+
         getProfile();
     };
 
@@ -32,6 +34,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             },
         });
         educationBody.innerHTML = "";
+        experienceBody.innerHTML = "";
+
         getProfile();
     };
 
