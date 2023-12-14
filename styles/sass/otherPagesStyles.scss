@@ -1,0 +1,156 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.navbar {
+    padding: 20px 0;
+    background-color: #212325d1;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.561);
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        a:hover {
+            color: aqua;
+        }
+    }
+
+    .main-logo {
+        font-size: 24px;
+    }
+
+    .main-logo:hover {
+        color: aqua;
+    }
+}
+
+.singUp,
+.singIn,
+.developers {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 52px;
+        color: rgb(34, 164, 164);
+        margin: 40px 0 0;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 20px 0 0;
+    }
+
+    span {
+        font-size: 13px;
+        display: block;
+        margin: 5px 0;
+        color: #747171;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid #aca9a9d4;
+        border-radius: 0;
+    }
+
+    button {
+        margin: 2px;
+        padding: 10px 20px;
+        background-color: rgb(0, 147, 147);
+        font-size: 14px;
+        color: #fff;
+        margin: 20px 0;
+
+        &:hover {
+            background-color: rgba(0, 147, 147, 0.876);
+        }
+    }
+
+    a {
+        color: rgb(0, 147, 147);
+    }
+
+    p {
+        color: #3f3e3e;
+    }
+
+    .developer-info {
+        width: 100%;
+        height: 250px;
+        background-color: rgb(235, 250, 247);
+        border: 1px solid #aca9a9d4;
+        margin: 15px 0 0;
+
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+
+        align-items: center;
+
+        img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .current-info {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .name {
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+            }
+
+            .address {
+                padding: 10px 0 0;
+            }
+
+            button {
+                width: 120px;
+            }
+        }
+
+        .skills {
+            width: 250px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                li {
+                    font-size: 16px;
+                    color: rgba(0, 147, 147, 0.827);
+                    position: relative;
+                }
+
+                li::before {
+                    content: url(/images/icons/check-solid.svg);
+                    position: absolute;
+                    left: -20px;
+                    bottom: -2px;
+                }
+            }
+        }
+    }
+}

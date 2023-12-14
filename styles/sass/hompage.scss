@@ -1,0 +1,83 @@
+// HOMEPAGE
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/showcase.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a7;
+}
+
+.navbar {
+    padding: 20px 0;
+    background-color: #212325d1;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.561);
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        a:hover {
+            color: aqua;
+        }
+    }
+
+    .main-logo {
+        font-size: 24px;
+    }
+
+    .main-logo:hover {
+        color: aqua;
+    }
+}
+
+.showcase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 160px;
+    color: #fff;
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    a {
+        margin: 2px;
+        padding: 10px 20px;
+    }
+
+    a:first-child {
+        background-color: rgb(0, 147, 147);
+
+        &:hover {
+            background-color: rgba(0, 147, 147, 0.876);
+        }
+    }
+    a:last-child {
+        background-color: #fff;
+        color: #000;
+
+        &:hover {
+            background-color: #ffffffe3;
+        }
+    }
+}

@@ -1,0 +1,169 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.navbar {
+  padding: 20px 0;
+  background-color: rgba(33, 35, 37, 0.8196078431);
+  color: #fff;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.561);
+}
+.navbar .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar ul a:hover {
+  color: aqua;
+}
+.navbar .main-logo {
+  font-size: 24px;
+}
+.navbar .main-logo:hover {
+  color: aqua;
+}
+
+.singUp,
+.singIn,
+.developers {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.singUp h2,
+.singIn h2,
+.developers h2 {
+  font-size: 52px;
+  color: rgb(34, 164, 164);
+  margin: 40px 0 0;
+}
+.singUp h4,
+.singIn h4,
+.developers h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0 0;
+}
+.singUp span,
+.singIn span,
+.developers span {
+  font-size: 13px;
+  display: block;
+  margin: 5px 0;
+  color: #747171;
+}
+.singUp input,
+.singIn input,
+.developers input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid rgba(172, 169, 169, 0.831372549);
+  border-radius: 0;
+}
+.singUp button,
+.singIn button,
+.developers button {
+  margin: 2px;
+  padding: 10px 20px;
+  background-color: rgb(0, 147, 147);
+  font-size: 14px;
+  color: #fff;
+  margin: 20px 0;
+}
+.singUp button:hover,
+.singIn button:hover,
+.developers button:hover {
+  background-color: rgba(0, 147, 147, 0.876);
+}
+.singUp a,
+.singIn a,
+.developers a {
+  color: rgb(0, 147, 147);
+}
+.singUp p,
+.singIn p,
+.developers p {
+  color: #3f3e3e;
+}
+.singUp .developer-info,
+.singIn .developer-info,
+.developers .developer-info {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(235, 250, 247);
+  border: 1px solid rgba(172, 169, 169, 0.831372549);
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  align-items: center;
+}
+.singUp .developer-info img,
+.singIn .developer-info img,
+.developers .developer-info img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.singUp .developer-info .current-info,
+.singIn .developer-info .current-info,
+.developers .developer-info .current-info {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.singUp .developer-info .current-info .name,
+.singIn .developer-info .current-info .name,
+.developers .developer-info .current-info .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+.singUp .developer-info .current-info .address,
+.singIn .developer-info .current-info .address,
+.developers .developer-info .current-info .address {
+  padding: 10px 0 0;
+}
+.singUp .developer-info .current-info button,
+.singIn .developer-info .current-info button,
+.developers .developer-info .current-info button {
+  width: 120px;
+}
+.singUp .developer-info .skills,
+.singIn .developer-info .skills,
+.developers .developer-info .skills {
+  width: 250px;
+}
+.singUp .developer-info .skills ul,
+.singIn .developer-info .skills ul,
+.developers .developer-info .skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.singUp .developer-info .skills ul li,
+.singIn .developer-info .skills ul li,
+.developers .developer-info .skills ul li {
+  font-size: 16px;
+  color: rgba(0, 147, 147, 0.827);
+  position: relative;
+}
+.singUp .developer-info .skills ul li::before,
+.singIn .developer-info .skills ul li::before,
+.developers .developer-info .skills ul li::before {
+  content: url(/images/icons/check-solid.svg);
+  position: absolute;
+  left: -20px;
+  bottom: -2px;
+}/*# sourceMappingURL=otherPagesStyles.css.map */
