@@ -9,6 +9,8 @@ body {
     background-color: #212325d1;
     color: #fff;
     border-bottom: 1px solid rgba(0, 255, 255, 0.561);
+    position: sticky;
+    top: 0;
 
     .nav-items {
         display: flex;
@@ -36,7 +38,9 @@ body {
 
 .singUp,
 .singIn,
-.developers {
+.developers,
+.dashboard,
+.createProfile {
     max-width: 1000px;
     margin: 0 auto;
 
@@ -59,17 +63,25 @@ body {
         color: #747171;
     }
 
-    input {
+    input,
+    select,
+    textarea {
         width: 100%;
         height: 40px;
         font-size: 18px;
-        padding: 10px;
+        padding: 8px;
         margin-top: 20px;
         border: 1px solid #aca9a9d4;
         border-radius: 0;
     }
 
-    button {
+    textarea {
+        height: 80px;
+    }
+
+    button,
+    .button,
+    .addSocial {
         margin: 2px;
         padding: 10px 20px;
         background-color: rgb(0, 147, 147);
@@ -79,6 +91,43 @@ body {
 
         &:hover {
             background-color: rgba(0, 147, 147, 0.876);
+        }
+    }
+
+    .button,
+    .addSocial {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .addSocial {
+        background-color: #908e8e5d;
+        color: #000;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    pre {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .profile-status {
+        margin-top: 15px;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+
+        i {
+            width: 50px;
+        }
+
+        input {
+            padding: 23px 10px;
+            margin: 10px 0;
         }
     }
 
