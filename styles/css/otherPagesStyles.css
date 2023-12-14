@@ -4,8 +4,12 @@ body {
   background-color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar {
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgba(33, 35, 37, 0.8196078431);
   color: #fff;
   border-bottom: 1px solid rgba(0, 255, 255, 0.561);
@@ -38,6 +42,7 @@ body {
 .createProfile {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .singUp h2,
 .singIn h2,
@@ -174,6 +179,150 @@ body {
 .dashboard .profile-status,
 .createProfile .profile-status {
   margin-top: 15px;
+}
+.singUp .editAdd-status,
+.singIn .editAdd-status,
+.developers .editAdd-status,
+.dashboard .editAdd-status,
+.createProfile .editAdd-status {
+  padding: 12px 20px;
+  background-color: rgba(115, 129, 129, 0.105);
+  font-size: 18px;
+  color: #000;
+  margin: 20px 4px;
+  display: inline-block;
+}
+.singUp .editAdd-status .fa-regular,
+.singUp .editAdd-status .fa-solid,
+.singIn .editAdd-status .fa-regular,
+.singIn .editAdd-status .fa-solid,
+.developers .editAdd-status .fa-regular,
+.developers .editAdd-status .fa-solid,
+.dashboard .editAdd-status .fa-regular,
+.dashboard .editAdd-status .fa-solid,
+.createProfile .editAdd-status .fa-regular,
+.createProfile .editAdd-status .fa-solid {
+  color: rgb(34, 164, 164);
+  margin-right: 5px;
+}
+.singUp .currentProfile h3,
+.singIn .currentProfile h3,
+.developers .currentProfile h3,
+.dashboard .currentProfile h3,
+.createProfile .currentProfile h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.singUp .experienceCredentials th,
+.singUp .experienceCredentials td,
+.singUp .educationCredentials th,
+.singUp .educationCredentials td,
+.singIn .experienceCredentials th,
+.singIn .experienceCredentials td,
+.singIn .educationCredentials th,
+.singIn .educationCredentials td,
+.developers .experienceCredentials th,
+.developers .experienceCredentials td,
+.developers .educationCredentials th,
+.developers .educationCredentials td,
+.dashboard .experienceCredentials th,
+.dashboard .experienceCredentials td,
+.dashboard .educationCredentials th,
+.dashboard .educationCredentials td,
+.createProfile .experienceCredentials th,
+.createProfile .experienceCredentials td,
+.createProfile .educationCredentials th,
+.createProfile .educationCredentials td {
+  padding: 15px 25px;
+  margin: 10px 4px 0;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+}
+.singUp .experienceCredentials td:last-child,
+.singUp .educationCredentials td:last-child,
+.singIn .experienceCredentials td:last-child,
+.singIn .educationCredentials td:last-child,
+.developers .experienceCredentials td:last-child,
+.developers .educationCredentials td:last-child,
+.dashboard .experienceCredentials td:last-child,
+.dashboard .educationCredentials td:last-child,
+.createProfile .experienceCredentials td:last-child,
+.createProfile .educationCredentials td:last-child {
+  background-color: red;
+  width: 80px;
+  padding: 16px 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.singUp .experienceCredentials th:last-child,
+.singUp .educationCredentials th:last-child,
+.singIn .experienceCredentials th:last-child,
+.singIn .educationCredentials th:last-child,
+.developers .experienceCredentials th:last-child,
+.developers .educationCredentials th:last-child,
+.dashboard .experienceCredentials th:last-child,
+.dashboard .educationCredentials th:last-child,
+.createProfile .experienceCredentials th:last-child,
+.createProfile .educationCredentials th:last-child {
+  width: 80px;
+}
+.singUp .experienceCredentials th,
+.singUp .educationCredentials th,
+.singIn .experienceCredentials th,
+.singIn .educationCredentials th,
+.developers .experienceCredentials th,
+.developers .educationCredentials th,
+.dashboard .experienceCredentials th,
+.dashboard .educationCredentials th,
+.createProfile .experienceCredentials th,
+.createProfile .educationCredentials th {
+  margin-top: 25px;
+  background-color: rgba(115, 129, 129, 0.105);
+}
+.singUp .experienceCredentials td:nth-child(3),
+.singUp .experienceCredentials th:nth-child(3),
+.singUp .educationCredentials td:nth-child(3),
+.singUp .educationCredentials th:nth-child(3),
+.singIn .experienceCredentials td:nth-child(3),
+.singIn .experienceCredentials th:nth-child(3),
+.singIn .educationCredentials td:nth-child(3),
+.singIn .educationCredentials th:nth-child(3),
+.developers .experienceCredentials td:nth-child(3),
+.developers .experienceCredentials th:nth-child(3),
+.developers .educationCredentials td:nth-child(3),
+.developers .educationCredentials th:nth-child(3),
+.dashboard .experienceCredentials td:nth-child(3),
+.dashboard .experienceCredentials th:nth-child(3),
+.dashboard .educationCredentials td:nth-child(3),
+.dashboard .educationCredentials th:nth-child(3),
+.createProfile .experienceCredentials td:nth-child(3),
+.createProfile .experienceCredentials th:nth-child(3),
+.createProfile .educationCredentials td:nth-child(3),
+.createProfile .educationCredentials th:nth-child(3) {
+  width: 230px;
+}
+.singUp .deleteAccount,
+.singIn .deleteAccount,
+.developers .deleteAccount,
+.dashboard .deleteAccount,
+.createProfile .deleteAccount {
+  color: white;
+  font-size: 20px;
+  padding: 10px 12px;
+  background-color: red;
+  margin: 40px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.singUp .deleteAccount .fa-solid,
+.singIn .deleteAccount .fa-solid,
+.developers .deleteAccount .fa-solid,
+.dashboard .deleteAccount .fa-solid,
+.createProfile .deleteAccount .fa-solid {
+  margin-right: 5px;
 }
 .singUp .socials,
 .singIn .socials,

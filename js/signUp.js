@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    axios.defaults.baseURL = "https://nt-devconnector.onrender.com/api";
+    axios.defaults.baseURL = "https://nt-devconnector.onrender.com";
 
     let formSignUp = document.querySelector("form");
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         let confirmPassword = formSignUp[3].value;
 
         if (userPassword == confirmPassword) {
-            let { data: user } = await axios.post("/users", {
+            let { data: user } = await axios.post("/api/users", {
                 name: userName,
                 email: userEmail,
                 password: userPassword,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             localStorage.setItem("token", user.token);
             console.log(user);
             setTimeout(() => {
-                window.location.replace("/pages/createProfile.html");
+                window.location.replace("/pages/dashboard.html");
             }, 2_000);
         } else {
             alert("Enter the same password in both fields");

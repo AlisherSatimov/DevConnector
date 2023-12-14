@@ -4,8 +4,12 @@ body {
     background-color: #fff;
 }
 
+.hidden {
+    display: none;
+}
+
 .navbar {
-    padding: 20px 0;
+    padding: 20px;
     background-color: #212325d1;
     color: #fff;
     border-bottom: 1px solid rgba(0, 255, 255, 0.561);
@@ -43,6 +47,7 @@ body {
 .createProfile {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 
     h2 {
         font-size: 52px;
@@ -115,6 +120,77 @@ body {
 
     .profile-status {
         margin-top: 15px;
+    }
+
+    .editAdd-status {
+        padding: 12px 20px;
+        background-color: rgba(115, 129, 129, 0.105);
+        font-size: 18px;
+        color: #000;
+        margin: 20px 4px;
+        display: inline-block;
+
+        .fa-regular,
+        .fa-solid {
+            color: rgb(34, 164, 164);
+            margin-right: 5px;
+        }
+    }
+
+    .currentProfile {
+        h3 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+    }
+
+    .experienceCredentials,
+    .educationCredentials {
+        th,
+        td {
+            padding: 15px 25px;
+            margin: 10px 4px 0;
+            display: inline-block;
+            height: 50px;
+            width: 150px;
+            text-align: center;
+        }
+
+        td:last-child {
+            background-color: red;
+            width: 80px;
+            padding: 16px 18px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        th:last-child {
+            width: 80px;
+        }
+
+        th {
+            margin-top: 25px;
+            background-color: rgba(115, 129, 129, 0.105);
+        }
+        td:nth-child(3),
+        th:nth-child(3) {
+            width: 230px;
+        }
+    }
+
+    .deleteAccount {
+        color: white;
+        font-size: 20px;
+        padding: 10px 12px;
+        background-color: red;
+        margin: 40px 0;
+        display: inline-block;
+        cursor: pointer;
+
+        .fa-solid {
+            margin-right: 5px;
+        }
     }
 
     .socials {

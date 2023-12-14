@@ -6,9 +6,36 @@ addSocial.addEventListener("click", function () {
 });
 
 let token = localStorage.getItem("token");
+
 if (!token) {
     window.location.replace("/pages/login.html");
 }
+
+(async () => {
+    let token = localStorage.getItem("token");
+    let setValueForm = document.querySelector("form");
+
+    axios.defaults.baseURL = "https://nt-devconnector.onrender.com";
+
+    let { data } = await axios.get("/api/profile/me", {
+        headers: {
+            "x-auth-token": `${token}`,
+        },
+    });
+
+    setValueForm[0].value = data.status;
+    setValueForm[1].value = data?.company;
+    setValueForm[2].value = data?.website;
+    setValueForm[3].value = data?.location;
+    setValueForm[4].value = data?.skills.toString();
+    setValueForm[5].value = data?.githubusername;
+    setValueForm[6].value = data?.bio;
+    setValueForm[8].value = data?.social.twitter;
+    setValueForm[9].value = data?.social.facebook;
+    setValueForm[10].value = data?.social.youtube;
+    setValueForm[11].value = data?.social.linkedin;
+    setValueForm[12].value = data?.social.instagram;
+})();
 
 document.addEventListener("DOMContentLoaded", async () => {
     axios.defaults.baseURL = "https://nt-devconnector.onrender.com";

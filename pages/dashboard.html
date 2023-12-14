@@ -29,25 +29,85 @@
                 <ul>
                     <li><a href="/pages/page404.html">404</a></li>
                     <li><a href="/pages/developers.html">Developers</a></li>
-                    <li><a href="/pages/signUp.html">Register</a></li>
-                    <li><a href="/pages/login.html">Login</a></li>
+                    <li><a href="/pages/posts.html">Posts</a></li>
+                    <li>
+                        <a href="/pages/dashboard.html">
+                            <i class="fa-solid fa-user"></i> Dashboard</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/pages/login.html" class="navLogin">
+                            <i class="fa-solid fa-right-from-bracket"></i> Log
+                            Out</a
+                        >
+                    </li>
                 </ul>
             </div>
         </nav>
         <main class="dashboard">
-            <h2>Sign In</h2>
-            <h4>
-                <i class="fa-solid fa-user"></i>
-                Welcome
-            </h4>
+            <div class="createProfile">
+                <h2>Sign In</h2>
+                <h4>
+                    <i class="fa-solid fa-user"></i>
+                    Welcome
+                </h4>
 
-            <p class="profile-status">
-                You have not yet setup a profile, please add some info
-            </p>
+                <p class="profile-status">
+                    You have not yet setup a profile, please add some info
+                </p>
 
-            <a href="/pages/createProfile.html" class="button"
-                >Create Profile</a
-            >
+                <a href="/pages/createProfile.html" class="button"
+                    >Create Profile</a
+                >
+            </div>
+            <div class="currentProfile hidden">
+                <h2>Dashboard</h2>
+                <h4 class="welcome"></h4>
+
+                <a href="/pages/editProfile.html" class="editAdd-status">
+                    <i class="fa-regular fa-circle-user"></i>
+                    Edit Profile
+                </a>
+                <a href="" class="editAdd-status">
+                    <i class="fa-solid fa-user-tie"></i>
+                    Add Experience
+                </a>
+                <a href="" class="editAdd-status">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Add Education
+                </a>
+
+                <h3>Experience Credentials</h3>
+
+                <table class="experienceCredentials">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Title</th>
+                            <th>Years</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="experienceBody"></tbody>
+                </table>
+                <h3>Education Credentials</h3>
+                <table class="educationCredentials">
+                    <thead>
+                        <tr>
+                            <th>School</th>
+                            <th>Degree</th>
+                            <th>Years</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="educationBody"></tbody>
+                </table>
+
+                <a class="deleteAccount">
+                    <i class="fa-solid fa-user-minus"></i>
+                    Delete My Account
+                </a>
+            </div>
         </main>
 
         <script src="/js/dashboard.js"></script>

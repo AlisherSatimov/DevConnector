@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgba(33, 35, 37, 0.8196078431);
   color: #fff;
   border-bottom: 1px solid rgba(0, 255, 255, 0.561);
@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-top: 160px;
+  padding: 160px 20px 0;
   color: #fff;
 }
 .showcase h1 {

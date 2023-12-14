@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    axios.defaults.baseURL = "https://nt-devconnector.onrender.com/api";
+    axios.defaults.baseURL = "https://nt-devconnector.onrender.com";
+
+    localStorage.removeItem("token");
 
     let formSignIn = document.querySelector("form");
 
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let email = formSignIn[0].value;
             let password = formSignIn[1].value;
 
-            let { data: user } = await axios.post("/auth", {
+            let { data: user } = await axios.post("/api/auth", {
                 email: email,
                 password: password,
             });
