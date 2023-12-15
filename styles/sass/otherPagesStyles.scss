@@ -5,7 +5,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .navbar {
@@ -40,15 +40,210 @@ body {
     }
 }
 
+.profile {
+    padding: 30px 0;
+    .backProfile,
+    .editProfile {
+        padding: 10px 20px;
+        background-color: rgb(227, 218, 207);
+        display: inline-block;
+        margin: 15px 0;
+    }
+
+    .editProfile {
+        background-color: rgba(19, 19, 18, 0.864);
+        color: #fff;
+    }
+
+    .mainInfoCard {
+        color: #fff;
+        width: 100%;
+        height: 550px;
+        background-color: #20bcff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin: 0 0 20px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        h2 {
+            font-size: 42px;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        ul {
+            display: flex;
+            gap: 15px;
+
+            li {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .devAbility {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb (47, 47, 47);
+        border: 1px solid #5b5a5a44;
+
+        h5 {
+            font-size: 24px;
+            color: #20bcff;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            display: flex;
+            gap: 35px;
+
+            li {
+                font-size: 18px;
+                position: relative;
+            }
+
+            li:before {
+                content: url(/images/icons/check-solid-black.svg);
+                position: absolute;
+                left: -17px;
+                bottom: -3px;
+            }
+        }
+    }
+    .devBio {
+        border-bottom: 1px solid #0000009f;
+    }
+
+    .exp-edu {
+        margin: 20px 0;
+        display: flex;
+        gap: 15px;
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .devExp,
+        .devEdu {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            flex-direction: column;
+            background-color: #eeebeb22;
+            border: 1px solid #908e8e;
+        }
+
+        .devStatus {
+            max-width: 100%;
+            height: auto;
+            padding: 30px;
+            border-bottom: 1px solid rgb(125, 121, 121);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            p {
+                span:first-child {
+                    font-weight: 600;
+                }
+            }
+
+            h2 {
+                font-size: 24px;
+                color: #20bcff;
+                margin-bottom: 10px;
+            }
+        }
+
+        .devStatus:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .githubRepos {
+        h2 {
+            font-size: 24px;
+            color: #20bcff;
+            margin: 20px 0 10px;
+            display: inline-block;
+        }
+
+        .repoCard {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgb(125, 121, 121);
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                font-size: 20px;
+                color: #14aced;
+            }
+        }
+
+        .repoStatus {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            span {
+                padding: 5px 10px;
+                color: #fff;
+            }
+
+            span:first-child {
+                background-color: #20bcff;
+            }
+
+            span:nth-child(2) {
+                background-color: #2c3032;
+            }
+
+            span:last-child {
+                background-color: #d8e5eb;
+                color: #000;
+            }
+        }
+    }
+}
+
 .singUp,
 .singIn,
 .developers,
 .dashboard,
 .createProfile,
-.addExperience {
+.addExperience,
+.posts {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+
+    .say-somthing {
+        padding: 15px 10px;
+        background-color: #14aced;
+        display: block;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #fff;
+    }
 
     h2 {
         font-size: 52px;
@@ -114,6 +309,64 @@ body {
             margin: 0 0 0 5px;
             padding: 0;
             font-weight: 400;
+        }
+    }
+
+    .postBody {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #868585a2;
+        display: flex;
+        align-items: end;
+        gap: 30px;
+
+        button {
+            margin: 0;
+        }
+
+        button:last-child {
+            background-color: red;
+        }
+
+        .img-name {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 20px;
+                color: #14aced;
+            }
+        }
+
+        .post-like {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 200px;
+            max-height: 200px;
+            overflow: hidden;
+
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+
+        .likelike {
+            i {
+                padding: 10px 20px;
+                margin-right: 5px;
+                background-color: #b5b5b5;
+            }
         }
     }
 

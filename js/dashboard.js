@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 "x-auth-token": `${token}`,
             },
         });
+        localStorage.setItem("myCurrentId", `${data.user._id}`);
         if (data) {
             createProfile.classList.add("hidden");
             currentProfile.classList.remove("hidden");

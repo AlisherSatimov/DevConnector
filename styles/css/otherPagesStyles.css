@@ -5,7 +5,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .navbar {
@@ -35,22 +35,195 @@ body {
   color: aqua;
 }
 
+.profile {
+  padding: 30px 0;
+}
+.profile .backProfile,
+.profile .editProfile {
+  padding: 10px 20px;
+  background-color: rgb(227, 218, 207);
+  display: inline-block;
+  margin: 15px 0;
+}
+.profile .editProfile {
+  background-color: rgba(19, 19, 18, 0.864);
+  color: #fff;
+}
+.profile .mainInfoCard {
+  color: #fff;
+  width: 100%;
+  height: 550px;
+  background-color: #20bcff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 0 0 20px;
+}
+.profile .mainInfoCard img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.profile .mainInfoCard h2 {
+  font-size: 42px;
+}
+.profile .mainInfoCard h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.profile .mainInfoCard ul {
+  display: flex;
+  gap: 15px;
+}
+.profile .mainInfoCard ul li {
+  font-size: 32px;
+}
+.profile .devAbility {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb 47, 47, 47;
+  border: 1px solid rgba(91, 90, 90, 0.2666666667);
+}
+.profile .devAbility h5 {
+  font-size: 24px;
+  color: #20bcff;
+}
+.profile .devAbility p {
+  font-size: 16px;
+}
+.profile .devAbility ul {
+  display: flex;
+  gap: 35px;
+}
+.profile .devAbility ul li {
+  font-size: 18px;
+  position: relative;
+}
+.profile .devAbility ul li:before {
+  content: url(/images/icons/check-solid-black.svg);
+  position: absolute;
+  left: -17px;
+  bottom: -3px;
+}
+.profile .devBio {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6235294118);
+}
+.profile .exp-edu {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+.profile .exp-edu .bold {
+  font-weight: 600;
+}
+.profile .exp-edu .devExp,
+.profile .exp-edu .devEdu {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgba(238, 235, 235, 0.1333333333);
+  border: 1px solid #908e8e;
+}
+.profile .exp-edu .devStatus {
+  max-width: 100%;
+  height: auto;
+  padding: 30px;
+  border-bottom: 1px solid rgb(125, 121, 121);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.profile .exp-edu .devStatus p span:first-child {
+  font-weight: 600;
+}
+.profile .exp-edu .devStatus h2 {
+  font-size: 24px;
+  color: #20bcff;
+  margin-bottom: 10px;
+}
+.profile .exp-edu .devStatus:last-child {
+  border-bottom: none;
+}
+.profile .githubRepos h2 {
+  font-size: 24px;
+  color: #20bcff;
+  margin: 20px 0 10px;
+  display: inline-block;
+}
+.profile .githubRepos .repoCard {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(125, 121, 121);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile .githubRepos .repoCard a {
+  font-size: 20px;
+  color: #14aced;
+}
+.profile .githubRepos .repoStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.profile .githubRepos .repoStatus span {
+  padding: 5px 10px;
+  color: #fff;
+}
+.profile .githubRepos .repoStatus span:first-child {
+  background-color: #20bcff;
+}
+.profile .githubRepos .repoStatus span:nth-child(2) {
+  background-color: #2c3032;
+}
+.profile .githubRepos .repoStatus span:last-child {
+  background-color: #d8e5eb;
+  color: #000;
+}
+
 .singUp,
 .singIn,
 .developers,
 .dashboard,
 .createProfile,
-.addExperience {
+.addExperience,
+.posts {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.singUp .say-somthing,
+.singIn .say-somthing,
+.developers .say-somthing,
+.dashboard .say-somthing,
+.createProfile .say-somthing,
+.addExperience .say-somthing,
+.posts .say-somthing {
+  padding: 15px 10px;
+  background-color: #14aced;
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
 }
 .singUp h2,
 .singIn h2,
 .developers h2,
 .dashboard h2,
 .createProfile h2,
-.addExperience h2 {
+.addExperience h2,
+.posts h2 {
   font-size: 52px;
   color: rgb(34, 164, 164);
   margin: 40px 0 0;
@@ -60,7 +233,8 @@ body {
 .developers h4,
 .dashboard h4,
 .createProfile h4,
-.addExperience h4 {
+.addExperience h4,
+.posts h4 {
   font-size: 24px;
   font-weight: 400;
   margin: 20px 0 0;
@@ -70,7 +244,8 @@ body {
 .developers span,
 .dashboard span,
 .createProfile span,
-.addExperience span {
+.addExperience span,
+.posts span {
   font-size: 13px;
   display: block;
   margin: 5px 0;
@@ -93,7 +268,10 @@ body {
 .createProfile textarea,
 .addExperience input,
 .addExperience select,
-.addExperience textarea {
+.addExperience textarea,
+.posts input,
+.posts select,
+.posts textarea {
   width: 100%;
   height: 40px;
   font-size: 18px;
@@ -107,7 +285,8 @@ body {
 .developers textarea,
 .dashboard textarea,
 .createProfile textarea,
-.addExperience textarea {
+.addExperience textarea,
+.posts textarea {
   height: 80px;
 }
 .singUp label,
@@ -115,7 +294,8 @@ body {
 .developers label,
 .dashboard label,
 .createProfile label,
-.addExperience label {
+.addExperience label,
+.posts label {
   margin-top: 20px;
   display: inline-block;
   font-size: 20px;
@@ -125,7 +305,8 @@ body {
 .developers input[type=date],
 .dashboard input[type=date],
 .createProfile input[type=date],
-.addExperience input[type=date] {
+.addExperience input[type=date],
+.posts input[type=date] {
   margin: 0;
 }
 .singUp .currentJob,
@@ -133,7 +314,8 @@ body {
 .developers .currentJob,
 .dashboard .currentJob,
 .createProfile .currentJob,
-.addExperience .currentJob {
+.addExperience .currentJob,
+.posts .currentJob {
   max-width: 1000px;
   display: flex;
   align-items: center;
@@ -144,7 +326,8 @@ body {
 .developers .currentJob input,
 .dashboard .currentJob input,
 .createProfile .currentJob input,
-.addExperience .currentJob input {
+.addExperience .currentJob input,
+.posts .currentJob input {
   width: 15px;
   height: 15px;
   margin: 0;
@@ -156,11 +339,114 @@ body {
 .developers .currentJob label,
 .dashboard .currentJob label,
 .createProfile .currentJob label,
-.addExperience .currentJob label {
+.addExperience .currentJob label,
+.posts .currentJob label {
   width: auto;
   margin: 0 0 0 5px;
   padding: 0;
   font-weight: 400;
+}
+.singUp .postBody,
+.singIn .postBody,
+.developers .postBody,
+.dashboard .postBody,
+.createProfile .postBody,
+.addExperience .postBody,
+.posts .postBody {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgba(134, 133, 133, 0.6352941176);
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+.singUp .postBody button,
+.singIn .postBody button,
+.developers .postBody button,
+.dashboard .postBody button,
+.createProfile .postBody button,
+.addExperience .postBody button,
+.posts .postBody button {
+  margin: 0;
+}
+.singUp .postBody button:last-child,
+.singIn .postBody button:last-child,
+.developers .postBody button:last-child,
+.dashboard .postBody button:last-child,
+.createProfile .postBody button:last-child,
+.addExperience .postBody button:last-child,
+.posts .postBody button:last-child {
+  background-color: red;
+}
+.singUp .postBody .img-name,
+.singIn .postBody .img-name,
+.developers .postBody .img-name,
+.dashboard .postBody .img-name,
+.createProfile .postBody .img-name,
+.addExperience .postBody .img-name,
+.posts .postBody .img-name {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.singUp .postBody .img-name img,
+.singIn .postBody .img-name img,
+.developers .postBody .img-name img,
+.dashboard .postBody .img-name img,
+.createProfile .postBody .img-name img,
+.addExperience .postBody .img-name img,
+.posts .postBody .img-name img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.singUp .postBody .img-name p,
+.singIn .postBody .img-name p,
+.developers .postBody .img-name p,
+.dashboard .postBody .img-name p,
+.createProfile .postBody .img-name p,
+.addExperience .postBody .img-name p,
+.posts .postBody .img-name p {
+  font-size: 20px;
+  color: #14aced;
+}
+.singUp .postBody .post-like,
+.singIn .postBody .post-like,
+.developers .postBody .post-like,
+.dashboard .postBody .post-like,
+.createProfile .postBody .post-like,
+.addExperience .postBody .post-like,
+.posts .postBody .post-like {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.singUp .postBody .post-like h4,
+.singIn .postBody .post-like h4,
+.developers .postBody .post-like h4,
+.dashboard .postBody .post-like h4,
+.createProfile .postBody .post-like h4,
+.addExperience .postBody .post-like h4,
+.posts .postBody .post-like h4 {
+  margin-bottom: 10px;
+}
+.singUp .postBody .likelike i,
+.singIn .postBody .likelike i,
+.developers .postBody .likelike i,
+.dashboard .postBody .likelike i,
+.createProfile .postBody .likelike i,
+.addExperience .postBody .likelike i,
+.posts .postBody .likelike i {
+  padding: 10px 20px;
+  margin-right: 5px;
+  background-color: #b5b5b5;
 }
 .singUp button,
 .singUp .button,
@@ -179,7 +465,10 @@ body {
 .createProfile .addSocial,
 .addExperience button,
 .addExperience .button,
-.addExperience .addSocial {
+.addExperience .addSocial,
+.posts button,
+.posts .button,
+.posts .addSocial {
   margin: 2px;
   padding: 10px 20px;
   background-color: rgb(0, 147, 147);
@@ -204,7 +493,10 @@ body {
 .createProfile .addSocial:hover,
 .addExperience button:hover,
 .addExperience .button:hover,
-.addExperience .addSocial:hover {
+.addExperience .addSocial:hover,
+.posts button:hover,
+.posts .button:hover,
+.posts .addSocial:hover {
   background-color: rgba(0, 147, 147, 0.876);
 }
 .singUp .button,
@@ -218,7 +510,9 @@ body {
 .createProfile .button,
 .createProfile .addSocial,
 .addExperience .button,
-.addExperience .addSocial {
+.addExperience .addSocial,
+.posts .button,
+.posts .addSocial {
   display: inline-block;
   margin-top: 20px;
 }
@@ -227,7 +521,8 @@ body {
 .developers .addSocial,
 .dashboard .addSocial,
 .createProfile .addSocial,
-.addExperience .addSocial {
+.addExperience .addSocial,
+.posts .addSocial {
   background-color: rgba(144, 142, 142, 0.3647058824);
   color: #000;
   margin-right: 10px;
@@ -238,7 +533,8 @@ body {
 .developers pre,
 .dashboard pre,
 .createProfile pre,
-.addExperience pre {
+.addExperience pre,
+.posts pre {
   display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
@@ -248,7 +544,8 @@ body {
 .developers .profile-status,
 .dashboard .profile-status,
 .createProfile .profile-status,
-.addExperience .profile-status {
+.addExperience .profile-status,
+.posts .profile-status {
   margin-top: 15px;
 }
 .singUp .editAdd-status,
@@ -256,7 +553,8 @@ body {
 .developers .editAdd-status,
 .dashboard .editAdd-status,
 .createProfile .editAdd-status,
-.addExperience .editAdd-status {
+.addExperience .editAdd-status,
+.posts .editAdd-status {
   padding: 12px 20px;
   background-color: rgba(115, 129, 129, 0.105);
   font-size: 18px;
@@ -275,7 +573,9 @@ body {
 .createProfile .editAdd-status .fa-regular,
 .createProfile .editAdd-status .fa-solid,
 .addExperience .editAdd-status .fa-regular,
-.addExperience .editAdd-status .fa-solid {
+.addExperience .editAdd-status .fa-solid,
+.posts .editAdd-status .fa-regular,
+.posts .editAdd-status .fa-solid {
   color: rgb(34, 164, 164);
   margin-right: 5px;
 }
@@ -284,7 +584,8 @@ body {
 .developers .currentProfile h3,
 .dashboard .currentProfile h3,
 .createProfile .currentProfile h3,
-.addExperience .currentProfile h3 {
+.addExperience .currentProfile h3,
+.posts .currentProfile h3 {
   font-size: 32px;
   font-weight: 400;
   margin-top: 20px;
@@ -312,7 +613,11 @@ body {
 .addExperience .experienceCredentials th,
 .addExperience .experienceCredentials td,
 .addExperience .educationCredentials th,
-.addExperience .educationCredentials td {
+.addExperience .educationCredentials td,
+.posts .experienceCredentials th,
+.posts .experienceCredentials td,
+.posts .educationCredentials th,
+.posts .educationCredentials td {
   padding: 15px 25px;
   margin: 10px 4px 0;
   display: inline-block;
@@ -331,7 +636,9 @@ body {
 .createProfile .experienceCredentials td:last-child,
 .createProfile .educationCredentials td:last-child,
 .addExperience .experienceCredentials td:last-child,
-.addExperience .educationCredentials td:last-child {
+.addExperience .educationCredentials td:last-child,
+.posts .experienceCredentials td:last-child,
+.posts .educationCredentials td:last-child {
   background-color: red;
   width: 80px;
   padding: 16px 18px;
@@ -349,7 +656,9 @@ body {
 .createProfile .experienceCredentials th:last-child,
 .createProfile .educationCredentials th:last-child,
 .addExperience .experienceCredentials th:last-child,
-.addExperience .educationCredentials th:last-child {
+.addExperience .educationCredentials th:last-child,
+.posts .experienceCredentials th:last-child,
+.posts .educationCredentials th:last-child {
   width: 80px;
 }
 .singUp .experienceCredentials th,
@@ -363,7 +672,9 @@ body {
 .createProfile .experienceCredentials th,
 .createProfile .educationCredentials th,
 .addExperience .experienceCredentials th,
-.addExperience .educationCredentials th {
+.addExperience .educationCredentials th,
+.posts .experienceCredentials th,
+.posts .educationCredentials th {
   margin-top: 25px;
   background-color: rgba(115, 129, 129, 0.105);
 }
@@ -390,7 +701,11 @@ body {
 .addExperience .experienceCredentials td:nth-child(3),
 .addExperience .experienceCredentials th:nth-child(3),
 .addExperience .educationCredentials td:nth-child(3),
-.addExperience .educationCredentials th:nth-child(3) {
+.addExperience .educationCredentials th:nth-child(3),
+.posts .experienceCredentials td:nth-child(3),
+.posts .experienceCredentials th:nth-child(3),
+.posts .educationCredentials td:nth-child(3),
+.posts .educationCredentials th:nth-child(3) {
   width: 230px;
 }
 .singUp .deleteAccount,
@@ -398,7 +713,8 @@ body {
 .developers .deleteAccount,
 .dashboard .deleteAccount,
 .createProfile .deleteAccount,
-.addExperience .deleteAccount {
+.addExperience .deleteAccount,
+.posts .deleteAccount {
   color: white;
   font-size: 20px;
   padding: 10px 12px;
@@ -412,7 +728,8 @@ body {
 .developers .deleteAccount .fa-solid,
 .dashboard .deleteAccount .fa-solid,
 .createProfile .deleteAccount .fa-solid,
-.addExperience .deleteAccount .fa-solid {
+.addExperience .deleteAccount .fa-solid,
+.posts .deleteAccount .fa-solid {
   margin-right: 5px;
 }
 .singUp .socials,
@@ -420,7 +737,8 @@ body {
 .developers .socials,
 .dashboard .socials,
 .createProfile .socials,
-.addExperience .socials {
+.addExperience .socials,
+.posts .socials {
   display: flex;
   align-items: center;
 }
@@ -429,7 +747,8 @@ body {
 .developers .socials i,
 .dashboard .socials i,
 .createProfile .socials i,
-.addExperience .socials i {
+.addExperience .socials i,
+.posts .socials i {
   width: 50px;
 }
 .singUp .socials input,
@@ -437,7 +756,8 @@ body {
 .developers .socials input,
 .dashboard .socials input,
 .createProfile .socials input,
-.addExperience .socials input {
+.addExperience .socials input,
+.posts .socials input {
   padding: 23px 10px;
   margin: 10px 0;
 }
@@ -446,7 +766,8 @@ body {
 .developers a,
 .dashboard a,
 .createProfile a,
-.addExperience a {
+.addExperience a,
+.posts a {
   color: rgb(0, 147, 147);
 }
 .singUp p,
@@ -454,7 +775,8 @@ body {
 .developers p,
 .dashboard p,
 .createProfile p,
-.addExperience p {
+.addExperience p,
+.posts p {
   color: #3f3e3e;
 }
 .singUp .developer-info,
@@ -462,7 +784,8 @@ body {
 .developers .developer-info,
 .dashboard .developer-info,
 .createProfile .developer-info,
-.addExperience .developer-info {
+.addExperience .developer-info,
+.posts .developer-info {
   width: 100%;
   height: 250px;
   background-color: rgb(235, 250, 247);
@@ -478,7 +801,8 @@ body {
 .developers .developer-info img,
 .dashboard .developer-info img,
 .createProfile .developer-info img,
-.addExperience .developer-info img {
+.addExperience .developer-info img,
+.posts .developer-info img {
   width: 230px;
   height: 230px;
   border-radius: 50%;
@@ -490,7 +814,8 @@ body {
 .developers .developer-info .current-info,
 .dashboard .developer-info .current-info,
 .createProfile .developer-info .current-info,
-.addExperience .developer-info .current-info {
+.addExperience .developer-info .current-info,
+.posts .developer-info .current-info {
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -501,7 +826,8 @@ body {
 .developers .developer-info .current-info .name,
 .dashboard .developer-info .current-info .name,
 .createProfile .developer-info .current-info .name,
-.addExperience .developer-info .current-info .name {
+.addExperience .developer-info .current-info .name,
+.posts .developer-info .current-info .name {
   font-size: 24px;
   font-weight: 600;
   color: #000;
@@ -511,7 +837,8 @@ body {
 .developers .developer-info .current-info .address,
 .dashboard .developer-info .current-info .address,
 .createProfile .developer-info .current-info .address,
-.addExperience .developer-info .current-info .address {
+.addExperience .developer-info .current-info .address,
+.posts .developer-info .current-info .address {
   padding: 10px 0 0;
 }
 .singUp .developer-info .current-info button,
@@ -519,7 +846,8 @@ body {
 .developers .developer-info .current-info button,
 .dashboard .developer-info .current-info button,
 .createProfile .developer-info .current-info button,
-.addExperience .developer-info .current-info button {
+.addExperience .developer-info .current-info button,
+.posts .developer-info .current-info button {
   width: 120px;
 }
 .singUp .developer-info .skills,
@@ -527,7 +855,8 @@ body {
 .developers .developer-info .skills,
 .dashboard .developer-info .skills,
 .createProfile .developer-info .skills,
-.addExperience .developer-info .skills {
+.addExperience .developer-info .skills,
+.posts .developer-info .skills {
   width: 250px;
 }
 .singUp .developer-info .skills ul,
@@ -535,7 +864,8 @@ body {
 .developers .developer-info .skills ul,
 .dashboard .developer-info .skills ul,
 .createProfile .developer-info .skills ul,
-.addExperience .developer-info .skills ul {
+.addExperience .developer-info .skills ul,
+.posts .developer-info .skills ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -545,7 +875,8 @@ body {
 .developers .developer-info .skills ul li,
 .dashboard .developer-info .skills ul li,
 .createProfile .developer-info .skills ul li,
-.addExperience .developer-info .skills ul li {
+.addExperience .developer-info .skills ul li,
+.posts .developer-info .skills ul li {
   font-size: 16px;
   color: rgba(0, 147, 147, 0.827);
   position: relative;
@@ -555,7 +886,8 @@ body {
 .developers .developer-info .skills ul li::before,
 .dashboard .developer-info .skills ul li::before,
 .createProfile .developer-info .skills ul li::before,
-.addExperience .developer-info .skills ul li::before {
+.addExperience .developer-info .skills ul li::before,
+.posts .developer-info .skills ul li::before {
   content: url(/images/icons/check-solid.svg);
   position: absolute;
   left: -20px;
